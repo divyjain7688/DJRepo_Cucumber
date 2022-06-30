@@ -16,7 +16,7 @@ public class CalculateSteps {
 		this.billing = int1;
 	}
 
-	@When("Tax amount is {int}")
+	/*@When("Tax amount is {int}")
 	public void tax_amount_is(Integer int1) {
 		System.out.println("Tax amount is " + int1);
 	}
@@ -24,7 +24,7 @@ public class CalculateSteps {
 	@Then("Final amount is {int}")
 	public void final_amount_is(Integer int1) {
 		System.out.println("Final amount is " + int1);
-	}
+	}*/
 
 	@When("Tax amount is {double}")
 	public void tax_amount_is(Double double1) {
