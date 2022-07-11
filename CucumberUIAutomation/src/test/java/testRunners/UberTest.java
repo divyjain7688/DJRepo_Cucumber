@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 	(
 		features = "src/test/resources/appFeatures/Uber.feature",
 		glue = {"stepDefinition","myHooks"},
-		tags= "@Smoke or @Regression" ,
+		tags= "@Smoke and not @Regression" ,
 	//  tags= "not @Smoke" ,
 	//	tags= "@All" ,
 		plugin = {"pretty",   // to see proper aligned output in console
@@ -20,7 +20,7 @@ import io.cucumber.junit.CucumberOptions;
 	//	publish = true,  maintained cucumber properties so this flag is not required
 		stepNotifications = true,
 	//	strict = true ,//depricated
-		dryRun = true, //its like compile and will give you which step does not have stepDefiniation
+		dryRun = false, //its like compile and will give you which step does not have stepDefiniation
 		monochrome = true	// all special char like  [90m#  in output is ignored and formatted properly 
 
 	)
